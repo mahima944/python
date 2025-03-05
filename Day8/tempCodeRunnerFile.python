@@ -1,0 +1,45 @@
+def display(data):
+    print(f" the dat is{data}")
+    
+def get_input():
+    data=input("enter the data")
+    return data
+    
+def add_num():
+    num=int("enter the number to add into list")
+    return num
+
+def remove_num():
+    nuum=int("enter the number to remove from list")
+    return nuum
+
+def reverse():
+    list.reverse()
+    return list
+
+def second_largest():
+    list.sort()
+    return list[-2]
+
+    
+def main():
+    list=[]
+    
+    choice=input("enter your choice (1-4)")
+    if choice=='1':
+        list.append(add_num())
+        
+    elif choice=='2':
+        list.append(remove_num())
+        
+    elif choice=='3':
+        list.append(reverse())
+    
+    elif choice=='4':
+        list.append(second_largest())
+        
+    else:
+        print("invalid choice")
+        
+        
+main()

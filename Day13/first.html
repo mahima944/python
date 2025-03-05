@@ -1,0 +1,23 @@
+<!DOCTYPE html>/
+<html>
+<head>
+    <title>HWelcome to javascript</title>
+    <script>
+        function onclick()
+        {
+            var textBoxvalue= document.getElementById("Name");
+            alert(textBoxvalue.value);
+            var local =document.getElementById("Result");
+            local.innerText="Welcome"+ textBoxvalue.value;
+        }
+        document.write("hello,world");
+    </script>
+</head>
+<body>
+    <Marquee><h1>"JAVA SCRIPT"</h1></Marquee>
+    <label id ="Name">Name</label>
+    <input id="text" value="name" type="text" </input>
+    <button type="button" onclick="displayGreeting()">Submit</button>
+    <p id="Result"></p>
+</body>
+</html>
